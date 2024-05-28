@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>LAND EXPLORER</title>
+    <style>
+        body {
+            background-image: url(final.avif);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: 
+            overflow :hidden
+        }
+        
+        h1 {
+            font-weight: bold;
+            color: white;
+            position: relative;
+            animation: slideIn 1s ease forwards; 
+            animation-delay: 0.005s; 
+        }
+        
+        @keyframes slideIn {
+            0% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        button{
+                color:white
+                position: relative;
+                animation: fadeIn 1s ease forwards; 
+                animation-delay: 0.005s; 
+                cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        
+        button:hover {
+            background-color: rgb(243, 246, 247) !important; 
+            box-shadow: 0 0 1px 10px rgba(0, 0, 0.5, 0.5); 
+        }
+            
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                    transform: translateY(50%);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+           
+
+        
+        form, h5 {
+            color: white;
+            position: relative;
+            animation: fadeIn 1s ease forwards; 
+            animation-delay: 0.005s; 
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    </head>
+    <body>
+       
+
+    <br>
+    <h1 style="font-weight: bold; color:white; left: 124px;top: 35px;;position: relative;overflow: hidden;">🏛️ LAND EXPLORER </h1><br>
+    <form id="loginform" style="color:white;left: 127px;position: relative;top: 20px;font-weight: 900;">
+        <br><br>USER ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id="username" type="text" placeholder="Enter your email" style="margin: 10px;"><br><br>
+        <br> PASSWORD:&nbsp;
+        <input id="password" type="password" placeholder="Enter password" style="margin: 10px;"><br><br>
+    </form>
+    
+        <br><br>
+        <button  id="login-button" style="left:241px;font-weight: 900; position: relative;background-color:white;width: 70px;height: 25px;color: black;" type="submit">LOGIN</button>
+    
+    <br><br>
+    <h5 style="color:white;font-weight: 900; left: 60px;position: relative;">
+        <p>This website is intended for informational purposes only. The information<p> provided on this website is not intended to be a substitute for professional legal,<p>financial, or real estate advice. Users of this website should always</p> seek the advice of qualified professionals regarding any legal,financial, or</p></p> real estate matters.</p>
+    </h5>
+    
+    <script>
+        
+        document.getElementById('login-button').addEventListener('click', function(event) {
+            event.preventDefault();
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            if (isValidEmail(username) && password) {
+                window.location.href='added.html';
+                
+               
+
+            } else {
+                alert('Invalid email address or password!');
+            }
+        });
+
+        function isValidEmail(email) {
+            
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    
+    </script>
+</body>
+</html>

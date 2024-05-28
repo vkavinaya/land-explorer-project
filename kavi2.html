@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title>LAND EXPLORER2</title>
+        <style>
+           
+            
+            h1 {
+                font-weight: bold;
+                color: white;
+                position: relative;
+                animation: slideIn 1s ease forwards; /* Animation for text */
+                animation-delay: 0.005s; /* Delay the animation */
+            }
+            
+            @keyframes slideIn {
+                0% {
+                    transform: translateY(100%);
+                }
+                100% {
+                    transform: translateY(0);
+                }
+            }
+            button{
+                
+                position: relative;
+                animation: fadeIn 1s ease forwards; /* Animation for form and text */
+                animation-delay: 0.005s; /* Delay the animation */
+                cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        
+        button:hover {
+             /* Change the color on hover */
+            box-shadow: 0 0 1px 10px rgba(0, 0, 0.5, 0.5); /* Add shadow on hover */
+        }
+            
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                    transform: translateY(50%);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            .toggle-btn{
+                cursor: pointer;
+                position: absolute;
+                top: 46px;
+                left:30px;
+                font-size: 30px;
+                z-index: 2;
+                color: white;
+                padding: 10px;
+                border: none;
+                height: 10px;
+                width: 10px;
+                background-color: transparent;
+            
+            }
+            .navbar{
+                display: none;
+                position: absolute;
+                top: 100px;
+                left: 0;
+                width:300px;
+                padding: 20px;
+                z-index: 1;
+                border: 4px solid black;
+                background-color: #123456;
+                border-radius: 10px;
+                height: 450px;
+            }
+            .navbar button{
+                display: block;
+                margin-bottom: 10px;
+                background-color: transparent;
+                color: white;
+                border: none;
+                cursor: pointer;
+                height: 50px;
+                width: 50px;
+                
+                
+            }
+            .close-btn{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: black;
+                border: none;
+                font-size: 20px;
+                cursor: pointer;
+                
+            }
+
+            
+            
+            form, h2 {
+                color: white;
+                position: relative;
+                animation: fadeIn 1s ease forwards; /* Animation for form and text */
+                animation-delay: 0.005s; /* Delay the animation */
+            }
+            
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                    transform: translateY(50%);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+        <body bgcolor="#123456">
+
+            <h1 style="color: white;"> 🏛️ LAND EXPLORER</h1>
+            
+            
+
+           
+        
+        
+        <button onclick="location.href='added.html'" style="left:1000px;font-weight: 900; height: 200px;width: 200px;position: relative;background-color:rgb(243, 247, 248);margin: 0;padding: 0;position: absolute;top: 5;left: 85%;transform: translateX(-50);height: 75px;width: 180px;">⬅ BACK</button>
+        
+            <button onclick="location.href='/welcome'" style="left:1000px; font-weight: 900; position: relative;background-color:rgb(243, 247, 248);margin: 0;padding: 0;position: absolute;top: 100;left:0%;transform: translateX(-50);height: 85px;width: 330px;"    type="submit">&nbsp;H O M E &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            <button onclick="location.href='/property'" style="left:1000px;font-weight: 900;  position: relative;background-color:rgb(243, 247, 248);margin: 0;padding: 0;position: absolute;top: 100;left: 24.1%;transform: translateX(-50);height: 85px;width: 340px;"    type="submit">P R O P E R T Y</button>  
+            <button onclick="location.href='/about'" style="left:1000px;font-weight: 900;  position: relative;background-color:rgb(243, 247, 248);margin: 0;padding: 0;position: absolute;top: 100;left: 48.9%;transform: translateX(-50);height: 85px;width: 340px;"    type="submit">A B O U T</button>
+            <button onclick="location.href='/contact'" style="left:1000px;font-weight: 900;  position: relative;background-color:rgb(243, 247, 248);margin: 0;padding: 0;position: absolute;top: 100;left: 73.7%;transform: translateX(-50);height: 85px;width: 360px;padding: 10px 20 px;"    type="submit">C O N T A C T &nbsp;&nbsp;   U S</button>
+            <h2 style="position: relative;bottom: -420;width: 100%;text-align: left ;left:100px;color:black;"><p>Discover the world,Explore the Extraordinary</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- LAND EXPLORER</h2>
+        </body>
+        
+        <body style="margin: o;padding: 0;background-image: url(secondimage.jpg);background-size: 1400px 450px;background-repeat: no-repeat;background-position: bottom;overflow: hidden;">
+        
+        
+        </body>
+        <button class="toggle-btn" onclick="toggleNavbar()">☰</button>
+<body>
+    <!-- Sidebar Navbar -->
+    <div class="navbar" id="navbar">
+        <button  class="close-btn" onclick="toggleNavbar()">&times;</button>
+        <h1 style="font-weight:1000; width:300px;color: white;text-align: center;">DISTRICTS</h1><br><br>
+        <button style="font-weight: 900;width: 300px;" onclick="location.href='bankchennai.html'">CHENNAI</button>
+        <button style="font-weight: 900;width: 300px;" onclick="location.href='/bankcoimbatore.html'">COIMBATORE</button>
+        <button style="font-weight: 900;width: 300px;" onclick="location.href='/banktrichy.html'">TRICHY</button>
+        <button  style="font-weight: 900; width: 300px;" onclick="location.href='bankmadurai.html'">MADURAI</button>
+        <button  style="font-weight: 900; width: 300px;" onclick="location.href='bankkanchipuram.html'">KANCHIPURAM</button>
+    </div>
+
+    <!-- Rest of your content -->
+    <!-- Buttons and other content -->
+
+    <script>
+        // Function to toggle navbar visibility
+        function toggleNavbar() {
+            var navbar = document.getElementById("navbar");
+            if (navbar.style.display === "block") {
+                navbar.style.display = "none"; // Hide the navbar
+            } else {
+                navbar.style.display = "block"; // Show the navbar
+            }
+        }
+    </script>
+    </body>
+       
+       
+        
+
+    </head>
+</html>

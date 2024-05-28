@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LAND EXPLORER SELECTION</title>
+</head>
+<style>
+           
+            
+    h1 {
+        font-weight: bold;
+        color: white;
+        position: relative;
+        animation: slideIn 1s ease forwards; /* Animation for text */
+        animation-delay: 0.005s; /* Delay the animation */
+    }
+    
+    @keyframes slideIn {
+        0% {
+            transform: translateY(100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    button,select{
+        color:white
+        position: relative;
+        animation: fadeIn 1s ease forwards; /* Animation for form and text */
+        animation-delay: 0.005s; /* Delay the animation */
+        cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        
+        button:hover {
+             /* Change the color on hover */
+            box-shadow: 0 0 1px 10px rgba(0, 0, 0.5, 0.5); /* Add shadow on hover */
+        }
+    
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(50%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+   
+
+    
+    
+     h3 {
+        color: white;
+        position: relative;
+        animation: fadeIn 1s ease forwards; /* Animation for form and text */
+        animation-delay: 0.005s; /* Delay the animation */
+        
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(50%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+<body style="background-image: url(selectimage.jpg);overflow: hidden;">
+    <button onclick="location.href='kavi2.html'" style="left:1000px;font-weight: 900; height: 200px;width: 200px;position: relative;background-color:black;color: white;margin: 0;padding: 0;position: absolute;top: 5;left: 85%;transform: translateX(-50);height: 75px;width: 180px;">⬅ BACK</button>
+    <h1 style="font-weight: bold; color: black; left: 250px;position: relative;">🏛️ LAND EXPLORER </h1>
+    <td><br><br>
+        <h3 style="position: relative;left:600px ;color: black;">CHOOSE THE DISTRICT WHERE THE AVAILABLE LANDS<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARE LOCATED</h3>
+        <br><br>
+        <select id="districtSelect" style="width: 200px;color:white;background-color: black;text-align:center;border: 1px solid#ccc;padding: 5px 25px 5px 5px;font-size: 16px;left: 750px;position: relative">
+            <option value="" disabled selected>SELECT DISTRICT</option>
+            <option value="district1">CHENNAI</option>
+            <option value="district2">COIMBATORE</option>
+            <option value="district3">TRICHY</option>
+            <option value="district4">MADURAI</option>
+            <option value="district5">KANCHIPURAM</option>
+        </select>
+    </td><br><br>
+    <button id="submitButton" style="width: 200px;color:white;background-color: black;text-align:center;border: 1px solid#ccc;padding: 5px 25px 5px 5px;font-size: 16px;left: 750px;position: relative">SUBMIT</button>
+
+    <script>
+        // Get references to the select element and submit button
+        const districtSelect = document.getElementById('districtSelect');
+        const submitButton = document.getElementById('submitButton');
+
+        // Add click event listener to the submit button
+        submitButton.addEventListener('click', function() {
+            // Get the selected district value
+            const selectedDistrict = districtSelect.value;
+            
+            // Redirect to the appropriate webpage based on the selected district
+            switch(selectedDistrict) {
+                case 'district1':
+                    window.location.href = 'bankchennai.html';
+                    break;
+                case 'district2':
+                    window.location.href = 'bankcoimbatore.html';
+                    break;
+                case 'district3':
+                    window.location.href = 'banktrichy.html';
+                    break;
+                case 'district4':
+                    window.location.href = 'bankmadurai.html';
+                    break;
+                case 'district5':
+                    window.location.href = 'bankkanchipuram.html';
+                    break;
+                default:
+                    // Do nothing if no district is selected
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>
