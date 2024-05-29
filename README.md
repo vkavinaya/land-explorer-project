@@ -11,5 +11,11 @@ second page
 
 third page
 
+![Screenshot (5)](https://github.com/vkavinaya/land-explorer-project/assets/171000297/d9246d6b-0bab-429e-86bf-96949018a13d)
+
+when property button is clicked
+
+
+
 
 
