@@ -36,6 +36,14 @@ when chennai is cliked , instead of chennai we can click any districts
 ![Screenshot (10)](https://github.com/vkavinaya/land-explorer-project/assets/171000297/0fb2abb1-26f0-4cc5-b0fb-94f7b1412e02)
 
 
+when view button is clicked :- It shows the available lands for sales in the particular districts
+
+when the link in the location is clicked then it redirects us to the exact location of that land
+
+![Screenshot (11)](https://github.com/vkavinaya/land-explorer-project/assets/171000297/1e9a5444-eca6-4e65-bfda-42423357ab07)
+
+
+
 
 
 
