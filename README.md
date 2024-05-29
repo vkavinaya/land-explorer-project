@@ -15,6 +15,12 @@ third page
 
 when property button is clicked
 
+![Screenshot (6)](https://github.com/vkavinaya/land-explorer-project/assets/171000297/b0fa40ff-4305-4a3d-b803-a684e81d9657)
+
+when about button is clicked
+
+
+
 
 
 
