@@ -23,7 +23,18 @@ when about button is clicked
 ![Screenshot (7)](https://github.com/vkavinaya/land-explorer-project/assets/171000297/71bd1e70-09f6-4429-ae1f-23eaf8fffeb5)
 
 when contact us button is clicked
+
+
 ![Screenshot (8)](https://github.com/vkavinaya/land-explorer-project/assets/171000297/95ce0d33-47f5-4073-9f80-82ed4d744fc1)
+
+
+![Screenshot (9)](https://github.com/vkavinaya/land-explorer-project/assets/171000297/3c72b54d-6dbf-4acc-9b2a-b1dfaa6cc036)
+
+when chennai is cliked , instead of chennai we can click any districts
+
+
+![Screenshot (10)](https://github.com/vkavinaya/land-explorer-project/assets/171000297/0fb2abb1-26f0-4cc5-b0fb-94f7b1412e02)
+
 
 
 
