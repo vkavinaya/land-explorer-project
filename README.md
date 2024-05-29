@@ -20,6 +20,13 @@ when property button is clicked
 when about button is clicked
 
 
+![Screenshot (7)](https://github.com/vkavinaya/land-explorer-project/assets/171000297/71bd1e70-09f6-4429-ae1f-23eaf8fffeb5)
+
+when contact us button is clicked
+![Screenshot (8)](https://github.com/vkavinaya/land-explorer-project/assets/171000297/95ce0d33-47f5-4073-9f80-82ed4d744fc1)
+
+
+
 
 
 
